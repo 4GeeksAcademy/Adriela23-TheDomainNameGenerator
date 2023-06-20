@@ -1,11 +1,19 @@
 /* eslint-disable */
-import "bootstrap";
-import "./style.css";
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
+//data source
+let pronoun = ["the", "your", "our"];
+let adjective = ["Testing", "Coding", "Amazing"];
+let noun = ["Website", "Spot", "Place"];
+let extension = [".com", ".net", ".dev"];
 
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+//loop that creates the domain
+for (let pronouns of pronoun) {
+  for (let adjectives of adjective) {
+    for (let nouns of noun) {
+      for (let extensions of extension) {
+        let newDomain = pronouns + adjectives + nouns + extensions;
+        console.log(newDomain);
+      }
+    }
+  }
+}
